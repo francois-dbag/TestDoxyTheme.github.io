@@ -1,0 +1,62 @@
+####################################################
+#
+# Welcome to Applin Doxy Jekyll Template
+#
+# Product Link : https://themeix.com/product/doxy-documentation-website-jekyll-template/
+# Version : v2.1.0
+#
+####################################################
+
+# Site settings
+title: "Geppetto - Documentation Website"
+email: "themeix@gmail.com"
+description: "Doxy is a responsive Jekyll template for your documentation or knowledgebase website"
+keywords: "jekyll, minimal jekyll, jekyll theme, responsive jekyll, seo friendly blog, super fast blog, responsive"
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://doxy.netlify.com" # the base hostname & protocol for your site, e.g. http://example.com
+cover_image: "https://themeix.com/wp-content/uploads/dooxy-responsive-html-template-preview.png"
+## Theme Options
+animated_header: ""  #true 
+twitter_username: jekyllrb
+github_username:  jekyll
+
+
+
+
+# Build settings
+markdown: kramdown
+theme: minima
+plugins:
+  - jekyll-feed
+
+
+# Tag Options
+tag_page_layout: tag_page
+tag_page_dir: tag
+
+permalink: /:title/ 
+ 
+collections:
+  team_members:
+    output: true
+    permalink: /team_members/:path/
+  testimonials:
+    output: true
+    permalink: /testimonials/:path/
+  docs:
+    output: true
+    permalink: /docs/:path/
+
+
+
+# Exclude from processing.
+# The following items will not be processed, by default. Create a custom list
+# to override the default setting.
+# exclude:
+#   - Gemfile
+#   - Gemfile.lock
+#   - node_modules
+#   - vendor/bundle/  d
+#   - vendor/cache/
+#   - vendor/gems/
+#   - vendor/ruby/

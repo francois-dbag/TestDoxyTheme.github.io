@@ -2,6 +2,8 @@
 
 - text: Home
   url: /
+- text: App Builder
+  url:  http://3.84.173.148:31111/
 - text: Support
   url: /pages/support
 - text: Docs

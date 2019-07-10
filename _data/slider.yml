@@ -1,9 +1,9 @@
 
-- title: "<span>All in One</span> documentation site for digital product authors"
-  button_label: "Purchase Now"
-  button_link: "/pages/submit-ticket"
+- title: "<span>Geppetto</span>Fastest way to create cloud native apps!"
+  button_label: "Try it Now"
+  button_link: "http://3.84.173.148:31111/"
 
-- title: "<span>Number #1</span> documentation template in Jekyll"
-  button_label: "Create a Ticket"
+- title: "<span>Multi Cloud Ready</span> Don't be locked in!"
+  button_label: "Test"
   button_link: "/pages/submit-ticket"
 

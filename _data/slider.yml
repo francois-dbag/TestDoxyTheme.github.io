@@ -1,9 +1,9 @@
 
-- title: "<span>Geppetto</span>Fastest way to create cloud native apps!"
+-  title: "<span>Geppetto</span> - Fastest way to create cloud native apps!"
   button_label: "Try it Now"
-  button_link: "http://3.84.173.148:31111/"
+  button_link: "/pages/app-bldr-BETA"
 
-- title: "<span>Multi Cloud Ready</span> Don't be locked in!"
-  button_label: "Test"
-  button_link: "/pages/submit-ticket"
+- title: "<span>Multi Cloud Ready</span> - Avoid lock in!"
+  button_label: "Learn More"
+  button_link: "/docs/geppetto-basic-concepts"
 

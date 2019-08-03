@@ -11,22 +11,5 @@
   submenu:
   - text: Getting Started
     url: /docs/geppetto-basic-concepts
-- text: Pages
-  url: /
-  submenu:
-  - text: Changelog
-    url: /pages/changelog
-  - text: Testimonials
-    url: /pages/testimonials
-  - text: Register
-    url: /pages/register
-  - text: Login
-    url: /pages/login    
-  - text: Privacy Policy
-    url: /pages/privacy-policy    
-  - text: FAQ
-    url: /pages/faq 
-  - text: Submit Ticket
-    url: /pages/submit-ticket
 - text: Contact
   url: /pages/contact

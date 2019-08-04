@@ -1,6 +1,6 @@
 ---
 layout: doc
-title: "Geppetto Basics - What is it?"
+title: "Your First App"
 description: "Here is the description of the doc page"
 date: 2018-11-08 8:14:30 +0600
 post_image: assets/images/gep-high-level-components.jpg

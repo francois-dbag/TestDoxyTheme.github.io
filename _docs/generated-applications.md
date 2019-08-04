@@ -1,11 +1,11 @@
 ---
 layout: doc
-title: "Geppetto Basics - What is it?"
+title: "Adding Custom Code"
 description: "Here is the description of the doc page"
 date: 2018-11-08 8:14:30 +0600
 post_image: assets/images/gep-high-level-components.jpg
-category_name: Getting Started
-category_slug: getting-started
+category_name: Generated Applications
+category_slug: the-apps
 ---
 <b>Geppetto Geppetto Geppetto Geppetto, consectetur adipisicing elit. Alias vitae doloremque quasi explicabo sit. Assumenda dolores, minus, accusamus quibusdam voluptas voluptatem, quos, iste ad dignissimos ea architecto dolorem incidunt vel dicta sint quaerat nostrum ipsam pariatur corporis! Aperiam ut aspernatur, aut, quaerat ducimus quibusdam suscipit.</b>
 

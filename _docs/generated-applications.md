@@ -7,19 +7,58 @@ post_image: assets/images/gep-high-level-components.jpg
 category_name: Generated Applications
 category_slug: the-apps
 ---
-<b>Geppetto Geppetto Geppetto Geppetto, consectetur adipisicing elit. Alias vitae doloremque quasi explicabo sit. Assumenda dolores, minus, accusamus quibusdam voluptas voluptatem, quos, iste ad dignissimos ea architecto dolorem incidunt vel dicta sint quaerat nostrum ipsam pariatur corporis! Aperiam ut aspernatur, aut, quaerat ducimus quibusdam suscipit.</b>
 
-<div>![Geppetto High Level](/assets/images/gep-high-level-components.jpg)</div>
+<b>Here we are going to see how you can add custom code to the generated code and deploy it to aws.</b>
+
+<h5>Adding customer code instructions step by setp</h5>
+<b>Create the front-end Application:</b>
+<ol>
+    <li>create the project and go inside the project and click code generate.<li>
+    <li>Once the code generated it will be pushed to the github.</li>
+	<li>Clone the code from the github.</li>
+	<li>Open terminal from the location where you have colned the code.<h5>$ cd applicationpath/application/clinets/desktop/projectName/src/app</h5></li>
+    <li>Create a  Two new component 
+    <ul>
+    <li> create-ticket Component </li>
+    <li> ticket-details Component </li>
+    </ul>
+    <h5> ng generate component [component-name]</h5></li>
+    <div> 
+      <a><img src="{{site.baseurl}}/assets/images/component-generate.png" alt="Question Answer"></a>
+    </div>
+    <li> Create the service for create-ticket component <h6>ng generate service [service-component-name]</h6></li>
+     <a><img src="{{site.baseurl}}/assets/images/service-component.png" alt="Question Answer"></a>
+     <p>Filename : <strong>create-ticket.service.ts</strong></p>Adding Custom Code
+     <li>Components create the module </li>
+     <h6>ng generate module [module-name]</h6>
+     <a><img src="{{site.baseurl}}/assets/images/crete-ticket-module.png" alt="Question Answer"></a>
+     <p>Filename : <strong>create-ticket.module.ts</strong>
+      <a><img src="{{site.baseurl}}/assets/images/ticket-details-module.png" ></a>
+     <p>Filename : <strong>create-ticket.module.ts</strong></p>
+     <h6> Adding Custom Code</h6>
+      <a><img src="{{site.baseurl}}/assets/images/crete-ticket-component-html.png" ><a>
+     <p>Filename : <strong>create-ticket.component.html</strong></p>
+      <a><img src="{{site.baseurl}}/assets/images/create-ticket-module.png" ><a>
+     <p>Filename : <strong>create-ticket.module.ts</strong></p>
+      <a><img src="{{site.baseurl}}/assets/images/tciket-details-module.png" ><a>
+     <p>Filename : <strong>ticket-details.module.ts</strong></p>
+      <a><img src="{{site.baseurl}}/assets/images/appmodule.png" ><a>
+     <p>Filename : <strong>app.module.ts</strong></p>
+     <li>In the above are the screen shot of the components added and the html content<li>
+     <li>Once the you have added these you need to import the modules of the component to the app.module.ts file.</li>
+     <li>So now you have added an custom component for the generated code</li>
+</ol>
 
 <p>It’s no secret that the digital industry is booming. From exciting startups to global brandscomp nies are reaching out to digital agencies, responding to the new possibilities available. However, the industry is fast becoming overcrowded, heaving with agencies offering similar services — on the surface, </p>
  <h5>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h5>
+
 <pre><code class="language-html">.heading-1 {
 <ul class="unorder-list">
     <li>Quam elementum pulvinar etiam non quam lacus suspendisse faucibus interdum posuere lorem ipsum</li>
     <li>Dolor sit amet consectetur adipiscing elit duis tristique </li>
     <li>Congue mauris rhoncus aenean vel </li>
 </ul></code></pre>
-<p>Filename : <strong>style.css</strong></p>
+<p>Filename : <strong>style.css</strong></p>Adding Custom Code
 <h4 class="heading-4">Features 
 </h4>
 <ul class="unorder-list">

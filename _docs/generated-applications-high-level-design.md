@@ -3,7 +3,7 @@ layout: doc
 title: "High Level Design"
 description: "Here is the description of the doc page"
 date: 2018-11-08 8:14:30 +0600
-post_image: assets/images/gep-high-level-components.jpg
+post_image: assets/images/gen-apps-cloud-native-components.jpg
 category_name: Generated Applications
 category_slug: the-apps
 ---
@@ -19,13 +19,10 @@ category_slug: the-apps
 
 <h5>What makes Geppetto Applications Cloud Native? </h5>
 
+<p>By default all Geppetto applications implement the tools/components depicted in the picture below</p>
 
+![Geppetto Cloud Native Components](/assets/images/gen-apps-cloud-native-components.png)
 
-
-
-
-<p>It’s no secret that the digital industry is booming. From exciting startups to global brandscomp nies are reaching out to digital agencies, responding to the new possibilities available. However, the industry is fast becoming overcrowded, heaving with agencies offering similar services — on the surface, </p>
- <h5>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h5>
 <pre><code class="language-html">.heading-1 {
 <ul class="unorder-list">
     <li>Quam elementum pulvinar etiam non quam lacus suspendisse faucibus interdum posuere lorem ipsum</li>

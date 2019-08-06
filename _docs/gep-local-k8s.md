@@ -7,36 +7,87 @@ post_image: assets/images/gep-high-level-components.jpg
 category_name: Runtime - Kubernetes
 category_slug: kubernetes
 ---
-<b>Geppetto Geppetto Geppetto Geppetto, consectetur adipisicing elit. Alias vitae doloremque quasi explicabo sit. Assumenda dolores, minus, accusamus quibusdam voluptas voluptatem, quos, iste ad dignissimos ea architecto dolorem incidunt vel dicta sint quaerat nostrum ipsam pariatur corporis! Aperiam ut aspernatur, aut, quaerat ducimus quibusdam suscipit.</b>
+<b>Prerequisites:        
+           1.Docker<br>
+           2.Go<br>
+           3.Kubernetes CLI(kubectl)<br>
+           4.Helm and Tiller<br>
+           5.KIND<br></b>
 
-![Geppetto High Level](/assets/images/gep-high-level-components.jpg)
 
-<p>It’s no secret that the digital industry is booming. From exciting startups to global brandscomp nies are reaching out to digital agencies, responding to the new possibilities available. However, the industry is fast becoming overcrowded, heaving with agencies offering similar services — on the surface, </p>
- <h5>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h5>
-<pre><code class="language-html">.heading-1 {
-<ul class="unorder-list">
-    <li>Quam elementum pulvinar etiam non quam lacus suspendisse faucibus interdum posuere lorem ipsum</li>
-    <li>Dolor sit amet consectetur adipiscing elit duis tristique </li>
-    <li>Congue mauris rhoncus aenean vel </li>
-</ul></code></pre>
-<p>Filename : <strong>style.css</strong></p>
-<h4 class="heading-4">Features 
-</h4>
-<ul class="unorder-list">
-    <li>Quam elementum pulvinar etiam non quam lacus suspendisse faucibus interdum posuere lorem ipsum</li>
-    <li>Dolor sit amet consectetur adipiscing elit duis tristique </li>
-    <li>Congue mauris rhoncus aenean vel </li>
-</ul>
-<h4 class="heading-4">Credits</h4>
-<ul class="order-list">
-    <li>Bootstrap : css front-end framework. <a href="#">http://getbootstrap.com/</a></li>
-    <li>Snazzy Maps :<a href="#">https://snazzymaps.com/</a></li>
-    <li>jQuery :fast, small, and feature-rich JavaScript library <a href="#">http://jquery.com/</a></li>
-    <li>Snazzy Maps :<a href="#">https://snazzymaps.com/</a></li>
-    <li>Metismenu :<a href="#">https://github.com/onokumus/metismenu</a></li>
-    <li>Highlight.js<a href="#">Syntax highlighting for the Web.https://highlightjs.org/</a></li>
-</ul>
-<h4 class="heading-4">Configure</h4>
-<p>Being creative within the constraints of client briefs, budgets and timelines is the norm for most agencies. However, investing in research and development as a true, creative outlet is a powerful addition. In these side projects alone, your team members can pool their expertise to create and shape their own vision — a powerful way to develop motivation, interdisciplinary skills and close relationships. People think focus means
-</p>
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem dolores corporis recusandae ipsam iste ipsum quidem quisquam, a vel tenetur culpa, beatae officiis voluptatem atque voluptates eaque, commodi debitis, libero modi adipisci accusamus explicabo amet iusto! In culpa praesentium quos cupiditate deserunt quis, corrupti impedit tempore autem. Dolorem perspiciatis eius veritatis cum eaque magni.</p>
+<b>Install Kubectl (Kubernetes CLI):</b>
+
+To install kubectl on Linux
+
+```$ curl -o kubectl https://amazon-eks.s3-us-west-2.amazonaws.com/1.12.7/2019-03-27/bin/linux/amd64/kubectl```
+
+```$ chmod +x ./kubectl```
+
+```$ mkdir -p $HOME/bin && cp ./kubectl $HOME/bin/kubectl && export PATH=$HOME/bin:$PATH```
+
+```$ echo 'export PATH=$HOME/bin:$PATH' >> ~/.bashrc```
+
+```$ kubectl version --short```
+
+To install <b>“KIND”(kubernetes in Docker)</b> and Create a cluster,
+
+ ```$ GO111MODULE="on" go get sigs.k8s.io/kind@v0.4.0 && kind create cluster```
+
+After running above command hit the below to export the KUBECONFIG
+
+```$ export KUBECONFIG="$(kind get kubeconfig-path --name="kind")"```
+
+To check the cluster info,
+
+ ```$ kubectl cluster-info```
+
+
+<b>Install Helm and Tiller :</b>
+
+Helm install :<br>
+
+```$ curl https://raw.githubusercontent.com/kubernetes/helm/master/scripts/get > get_helm.sh``` <br>
+```$ chmod 700 get_helm.sh```<br>
+```$ ./get_helm.sh```<br>
+
+Tiller install :<br>
+
+```$ kubectl -n kube-system create sa tiller```<br>
+```$ kubectl create clusterrolebinding tiller --clusterrole cluster-admin --serviceaccount=kube-system:tiller```<br>
+```$ helm init --service-account tiller```<br>
+
+
+Check installation:
+
+```$ helm version --short```
+
+Sample Output : 
+
+  Client: v2.14.1+g5270352<br>
+  Server: v2.14.1+g5270352<br>
+
+Once the above setup is completed now we have kubernetes environment in Local.<br>
+Follow the below steps to deploy the genereated application.
+
+<b>Create project and generate code from geppetto  application</b>
+
+1. Clone the code in your local.
+
+2. And enter into the local buildscript folder using the below commands to run the script which will build and push the docker images of microservices,load into kind and then deploy it in kind using helm charts.
+
+```$ cd <APPNAME>/devops/local/buildscript```
+
+To run the build script
+
+```$ sh geppetto_build.sh```
+
+
+Pod Description:
+
+
+
+
+
+
+
+

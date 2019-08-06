@@ -7,9 +7,22 @@ post_image: assets/images/gep-high-level-components.jpg
 category_name: Generated Applications
 category_slug: the-apps
 ---
-<b>Geppetto Geppetto Geppetto Geppetto, consectetur adipisicing elit. Alias vitae doloremque quasi explicabo sit. Assumenda dolores, minus, accusamus quibusdam voluptas voluptatem, quos, iste ad dignissimos ea architecto dolorem incidunt vel dicta sint quaerat nostrum ipsam pariatur corporis! Aperiam ut aspernatur, aut, quaerat ducimus quibusdam suscipit.</b>
+<b>TL;DR</b>
 
-<div>![Geppetto High Level](/assets/images/gep-high-level-components.jpg)</div>
+<b>Geppetto applications are designed to be <a href="https://www.ibm.com/cloud/learn/cloud-native"  style="text-decoration: none; border-bottom: 1px solid #ff0000; color: #000000;" target="_blank">Cloud Native</a> implementing modern development best practices utilizing Open Source tools</b>
+
+<h5>What is a Cloud Native App?</h5>
+
+<p>The IBM video below  explains what a Cloud Native application is</p>
+ {% include youtubePlayer.html id="fp9_ubiKqFU" %}
+<br />
+
+<h5>What makes Geppetto Applications Cloud Native? </h5>
+
+
+
+
+
 
 <p>It’s no secret that the digital industry is booming. From exciting startups to global brandscomp nies are reaching out to digital agencies, responding to the new possibilities available. However, the industry is fast becoming overcrowded, heaving with agencies offering similar services — on the surface, </p>
  <h5>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h5>

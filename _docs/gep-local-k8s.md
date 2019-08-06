@@ -9,7 +9,7 @@ category_slug: kubernetes
 ---
 <b>Geppetto Geppetto Geppetto Geppetto, consectetur adipisicing elit. Alias vitae doloremque quasi explicabo sit. Assumenda dolores, minus, accusamus quibusdam voluptas voluptatem, quos, iste ad dignissimos ea architecto dolorem incidunt vel dicta sint quaerat nostrum ipsam pariatur corporis! Aperiam ut aspernatur, aut, quaerat ducimus quibusdam suscipit.</b>
 
-<div>![Geppetto High Level](/assets/images/gep-high-level-components.jpg)</div>
+![Geppetto High Level](/assets/images/gep-high-level-components.jpg)
 
 <p>It’s no secret that the digital industry is booming. From exciting startups to global brandscomp nies are reaching out to digital agencies, responding to the new possibilities available. However, the industry is fast becoming overcrowded, heaving with agencies offering similar services — on the surface, </p>
  <h5>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h5>

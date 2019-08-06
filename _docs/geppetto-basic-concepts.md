@@ -7,11 +7,34 @@ post_image: assets/images/gep-high-level-components.jpg
 category_name: Getting Started
 category_slug: getting-started
 ---
-<b>Geppetto Geppetto Geppetto Geppetto, consectetur adipisicing elit. Alias vitae doloremque quasi explicabo sit. Assumenda dolores, minus, accusamus quibusdam voluptas voluptatem, quos, iste ad dignissimos ea architecto dolorem incidunt vel dicta sint quaerat nostrum ipsam pariatur corporis! Aperiam ut aspernatur, aut, quaerat ducimus quibusdam suscipit.</b>
+<b>Why Geppetto?</b>
+<p>Building modern applications is hard and getting harder. It Requires knowledge of a diverse and expanding set of technologies</p>
+<ul class="unorder-list">
+    <li>“Multi-cloud”</li>
+    <li>Highly scalable</li>
+    <li>Mobile and desktop ready</li>
+    <li>Highly engaging UX/UI are expected</li>
+    <li>Decreased time to market</li>
+</ul>
+<b>Geppetto addresses the issues by providing</b>
+<ul class="unorder-list">
+    <li>Low code component assembly platform leveraging</li>
+    <li>Rapid Prototyping</li>
+    <li>Avoids reinventing the wheel for new projects</li>
+    <li>Modern design patterns</li>
+    <li>Hybrid and Cloud native apps</li>
+    <li>Microservices</li>
+    <li>Dev/ops tools</li>
+    <li>Open source tools</li>
 
-<div>![Geppetto High Level](/assets/images/gep-high-level-components.jpg)</div>
+</ul>
 
-<p>It’s no secret that the digital industry is booming. From exciting startups to global brandscomp nies are reaching out to digital agencies, responding to the new possibilities available. However, the industry is fast becoming overcrowded, heaving with agencies offering similar services — on the surface, </p>
+![Geppetto High Level](/assets/images/gep-high-level-components.jpg)
+
+<p>Below is a test for video embeding </p>
+ 
+  {% include youtubePlayer.html id="eXQ977qaXhs" %}
+ 
  <h5>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h5>
 <pre><code class="language-html">.heading-1 {
 <ul class="unorder-list">

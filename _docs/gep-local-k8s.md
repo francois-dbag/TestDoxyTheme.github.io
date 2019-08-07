@@ -12,8 +12,9 @@ category_slug: kubernetes
 </h5>  
 
 <ul class="unorder-list">
-    <li>Docker</li>
-    <li>Go</li>
+    <li><a href="https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-on-ubuntu-18-04"  style="text-decoration: none; border-bottom: 1px solid #ff0000; color: #000000;" target="_blank">Docker</a></li>
+    <li><a href="https://www.digitalocean.com/community/tutorials/how-to-install-go-on-ubuntu-18-04"  style="text-decoration: none; border-bottom: 1px solid #ff0000; color: #000000;" target="_blank">Go</a></li>
+    <li><a href="https://github.com/kubernetes-sigs/kind"  style="text-decoration: none; border-bottom: 1px solid #ff0000; color: #000000;" target="_blank">kind</a></li>
 </ul>
 
 <h5 class="heading-4">Install Kubectl (Kubernetes CLI): 

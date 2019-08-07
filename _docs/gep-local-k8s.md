@@ -7,17 +7,17 @@ post_image: assets/images/gep-high-level-components.jpg
 category_name: Runtime - Kubernetes
 category_slug: kubernetes
 ---
-<b>Prerequisites:        
-           1.Docker<br>
-           2.Go<br>
-           3.Kubernetes CLI(kubectl)<br>
-           4.Helm and Tiller<br>
-           5.KIND<br></b>
 
+<h5 class="heading-4">Prerequisites: 
+</h5>  
 
-<b>Install Kubectl (Kubernetes CLI):</b>
+<ul class="unorder-list">
+    <li>Docker</li>
+    <li>Go</li>
+</ul>
 
-To install kubectl on Linux
+<h5 class="heading-4">Install Kubectl (Kubernetes CLI): 
+</h5>
 
 ```$ curl -o kubectl https://amazon-eks.s3-us-west-2.amazonaws.com/1.12.7/2019-03-27/bin/linux/amd64/kubectl```
 
@@ -29,9 +29,9 @@ To install kubectl on Linux
 
 ```$ kubectl version --short```
 
-To install <b>“KIND”(kubernetes in Docker)</b> and Create a cluster,
+<h5 class="heading-4">To install “KIND”(kubernetes in Docker) and Create a cluster,</h5>
 
- ```$ GO111MODULE="on" go get sigs.k8s.io/kind@v0.4.0 && kind create cluster```
+```$ GO111MODULE="on" go get sigs.k8s.io/kind@v0.4.0 && kind create cluster```
 
 After running above command hit the below to export the KUBECONFIG
 
@@ -39,29 +39,29 @@ After running above command hit the below to export the KUBECONFIG
 
 To check the cluster info,
 
- ```$ kubectl cluster-info```
+```$ kubectl cluster-info```
 
 
-<b>Install Helm and Tiller :</b>
+<h5 class="heading-4">Install Helm and Tiller :</h5>
 
-Helm install :<br>
+<b>Helm install :</b><br>
 
 ```$ curl https://raw.githubusercontent.com/kubernetes/helm/master/scripts/get > get_helm.sh``` <br>
 ```$ chmod 700 get_helm.sh```<br>
 ```$ ./get_helm.sh```<br>
 
-Tiller install :<br>
+<b>Tiller install :</b><br>
 
 ```$ kubectl -n kube-system create sa tiller```<br>
 ```$ kubectl create clusterrolebinding tiller --clusterrole cluster-admin --serviceaccount=kube-system:tiller```<br>
 ```$ helm init --service-account tiller```<br>
 
 
-Check installation:
+<b>Check installation:</b><br>
 
 ```$ helm version --short```
 
-Sample Output : 
+<b>Sample Output :</b><br>
 
   Client: v2.14.1+g5270352<br>
   Server: v2.14.1+g5270352<br>
@@ -69,7 +69,7 @@ Sample Output :
 Once the above setup is completed now we have kubernetes environment in Local.<br>
 Follow the below steps to deploy the genereated application.
 
-<b>Create project and generate code from geppetto  application</b>
+<h5 class="heading-4">Create project and generate code from geppetto application</h5>
 
 1. Clone the code in your local.
 
@@ -81,8 +81,74 @@ To run the build script
 
 ```$ sh geppetto_build.sh```
 
+![Local Helm](/assets/images/deployment/local-helm.png)
 
-Pod Description:
+Port-forwarding :
+
+```$ kubectl get pods -n <NAMESPACE>```
+
+```$ kubectl port-forward <SYSTEM-ENTRY-POD-NAME> -n <NAMESPACE> 31234:4000```
+
+![portforward-apigateway](/assets/images/deployment/apigateway-portforward.png)
+
+Open another terminal tab,
+
+```$ kubectl port-forward <SYSTEM-ENTRY-POD-NAME> -n <NAMESPACE> 4222:80```
+
+![portforward-desktop](/assets/images/deployment/desktop-portforward.png)
+
+You can access Application in your browser at http://localhost:4222/,
+
+![local login](/assets/images/deployment/local-login.png)
+
+
+<h5 class="heading-4">List of Pods Generated:</h5>
+
+1. app-pod<br>
+2. app-db-pod<br>
+3. system-entry<br>
+4. camunda-pod<br>
+
+<b>1. App-pod:</b>
+
+    App-pod contains backend services for the generated applications which includes adminmanager,authproxy,camunda and security manager.
+
+<b>2. App-db-pod:</b>
+ 
+    App-db-pod contains mongodb for the generated application.
+
+<b>3. System-entry:</b>
+
+    System-entry pod contains the nginx container(ui) and api-gateway container.
+
+<b>4. Camunda-pod:</b>
+
+    Camunda-pod used for authorization and authentication.
+
+<h5 class="heading-4">Logging</h5>
+
+To see the logs of the container,
+
+```$ kubectl logs <POD-NAME> <CONTAINER-NAME> -n <NAMESPACE>```
+
+![container logs](/assets/images/deployment/container-logs.png)
+
+    
+
+    
+
+     
+
+
+
+
+
+
+
+    
+      
+   
+    
 
 
 

@@ -16,7 +16,7 @@ category_slug: getting-started
     <li>Highly engaging UX/UI are expected</li>
     <li>Decreased time to market</li>
 </ul>
-<b>Geppetto addresses the issues by providing</b>
+<h5>Geppetto addresses the issues by providing</h5>
 <ul class="unorder-list">
     <li>Low code component assembly platform leveraging</li>
     <li>Rapid Prototyping</li>
@@ -31,35 +31,54 @@ category_slug: getting-started
 
 ![Geppetto High Level](/assets/images/gep-high-level-components.jpg)
 
-<p>Below is a test for video embeding </p>
+
  
-  {% include youtubePlayer.html id="eXQ977qaXhs" %}
- 
- <h5>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h5>
-<pre><code class="language-html">.heading-1 {
-<ul class="unorder-list">
-    <li>Quam elementum pulvinar etiam non quam lacus suspendisse faucibus interdum posuere lorem ipsum</li>
-    <li>Dolor sit amet consectetur adipiscing elit duis tristique </li>
-    <li>Congue mauris rhoncus aenean vel </li>
-</ul></code></pre>
-<p>Filename : <strong>style.css</strong></p>
-<h4 class="heading-4">Features 
-</h4>
-<ul class="unorder-list">
-    <li>Quam elementum pulvinar etiam non quam lacus suspendisse faucibus interdum posuere lorem ipsum</li>
-    <li>Dolor sit amet consectetur adipiscing elit duis tristique </li>
-    <li>Congue mauris rhoncus aenean vel </li>
+ <h5>How does Geppetto help Enterprise IT?</h5>
+  <ul class="unorder-list">
+    <li>New standard based prototypes delivered in hours</li>
+    <li>Prototyping can be done with “production” level code and techniques</li>
+    <li>Lower project startup costs
+      <ul class="unorder-list">
+      <li><a href="#calculation" style="text-decoration: none; border-bottom: 1px solid #ff0000; color: #000000;">
+      See below - Geppetto can save Money</a></li>
+      </ul>     
+    </li>
+    <li>Multi-cloud from the ground up
+     <ul class="unorder-list">
+      <li>Kubernetes starts with developer workstation</li>
+      </ul>     
+    </li>
+    <li>Common “pluggable” architecture and code base
+     <ul class="unorder-list">
+      <li>Microservices</li>
+      <li>12 factor app principles</li>
+      <li>dev/ops baked in at the start</li>
+      </ul>     
+    </li>
+    <li>Centralized management/scanning of code base
+       <ul class="unorder-list">
+        <li>Dev/ops tools</li>
+        <li>Use your company's trusted repository</li>
+       </ul>     
+    </li>
+
 </ul>
-<h4 class="heading-4">Credits</h4>
-<ul class="order-list">
-    <li>Bootstrap : css front-end framework. <a href="#">http://getbootstrap.com/</a></li>
-    <li>Snazzy Maps :<a href="#">https://snazzymaps.com/</a></li>
-    <li>jQuery :fast, small, and feature-rich JavaScript library <a href="#">http://jquery.com/</a></li>
-    <li>Snazzy Maps :<a href="#">https://snazzymaps.com/</a></li>
-    <li>Metismenu :<a href="#">https://github.com/onokumus/metismenu</a></li>
-    <li>Highlight.js<a href="#">Syntax highlighting for the Web.https://highlightjs.org/</a></li>
+
+ <h5><a name="calculation">Back of the envelope calculation</a></h5>
+<b>Answer the following:</b>
+
+<p>How long would it take the average team in your organization 
+to prototype a well architected microservices app?</p>
+
+This assumes that you have staff that know how to develop a Microservices based solution
+Take the efforts (hours/days) and compare it with the numbers for Geppetto
+
+<h5><b>In Geppetto it takes about 15 minutes!</b></h5>
+<p>For ease of calculation let's say it takes 30 minutes</p>
+<ul class="unorder-list">
+    <li>onshore developer costs about $100.00/hr</li>
+    <li>offshore developer costs about $40.00/hr</li>
 </ul>
-<h4 class="heading-4">Configure</h4>
-<p>Being creative within the constraints of client briefs, budgets and timelines is the norm for most agencies. However, investing in research and development as a true, creative outlet is a powerful addition. In these side projects alone, your team members can pool their expertise to create and shape their own vision — a powerful way to develop motivation, interdisciplinary skills and close relationships. People think focus means
-</p>
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem dolores corporis recusandae ipsam iste ipsum quidem quisquam, a vel tenetur culpa, beatae officiis voluptatem atque voluptates eaque, commodi debitis, libero modi adipisci accusamus explicabo amet iusto! In culpa praesentium quos cupiditate deserunt quis, corrupti impedit tempore autem. Dolorem perspiciatis eius veritatis cum eaque magni.</p>
+<p style="color:rgb(255, 0, 0)"><b>Cost using Geppetto: $50 and $20 respectively</b></p>
+
+
